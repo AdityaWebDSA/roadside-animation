@@ -1,0 +1,316 @@
+#carcartoonall {
+    height: 90%;
+    width: 90%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-image: url(https://t3.ftcdn.net/jpg/03/00/10/16/360_F_300101671_g05kRIreJ3N9RVmMwZIRJmh8BAFLyTxU.jpg);
+    background-size: 100% 100%;  
+    background-repeat: no-repeat; 
+    background-position: center;
+    box-shadow: 0 0 20px rgba(34, 45, 45, 0.8), 0 0 40px rgba(95, 119, 119, 0.6), 0 0 60px rgba(143, 152, 152, 0.4);
+
+}
+
+
+#car{
+    background-image: url(car.png);
+    background-size: 100% 100%;  
+     background-repeat: no-repeat; 
+     background-position: center;
+     width: 27%;
+    height: 58%;
+    position: absolute;
+    right: 3%;
+    top: 55%;
+    z-index: 1;
+}
+#scooter{
+    background-image: url(scooter.png);
+    background-size: 100% 100%;  
+     background-repeat: no-repeat; 
+     background-position: center;
+     width: 12%;
+    height: 19.1%;
+    position: absolute;
+    right: 3%;
+    top: 66%;
+}
+/* .wheel{
+   background-image: url(https://pngimg.com/d/car_wheel_PNG23302.png);
+   background-size: 100% 100%;  
+    background-repeat: no-repeat; 
+    background-position: center;
+    
+    
+}
+
+#wheel1{
+
+    width: 4.8%;
+    height: 9.2%;
+    position: absolute;
+    right: 21.7%;
+    top: 82.8%;
+  
+
+}
+
+#wheel2{
+
+    width: 5%;
+    height: 9.4%;
+    position: absolute;
+    right: 6.6%;
+    top: 82%;
+} */
+
+#cloud1{
+    background-image: url(cloud.png);
+   background-size: 100% 100%;  
+    background-repeat: no-repeat; 
+    background-position: center;
+    width: 25%;
+    height: 42%;
+    position: absolute;
+    left: 4.0%;
+    top: 0.1%; 
+    right: 89%;
+}
+
+#cloud2{
+    background-image: url(cloud.png);
+   background-size: 100% 100%;  
+    background-repeat: no-repeat; 
+    background-position: center;
+    width: 30%;
+    height: 50%;
+    position: absolute;
+    left: 48%;
+    top: 6%; 
+}
+
+#cloud3{
+    background-image: url(cloud.png);
+   background-size: 100% 100%;  
+    background-repeat: no-repeat; 
+    background-position: center;
+    width: 24%;
+    height: 42%;
+    position: absolute;
+    left: 28%;
+    top: 4%; 
+}
+
+#cloud4{
+    background-image: url(cloud.png);
+   background-size: 100% 100%;  
+    background-repeat: no-repeat; 
+    background-position: center;
+    width: 26%;
+    height: 40%;
+    position: absolute;
+    right: 1%;
+    top: 1%;
+}
+
+#kolhapur{
+    background-image: url(kolhapur.png);
+   background-size: 100% 100%;  
+    background-repeat: no-repeat; 
+    background-position: center;
+    width: 13%;
+    height: 26%;
+    position: absolute;
+    left: 12%;
+    top: 52%; 
+}
+#dahiwadi{
+    background-image: url(dahiwadi.png);
+   background-size: 100% 100%;  
+    background-repeat: no-repeat; 
+    background-position: center;
+    width: 13%;
+    height: 25%;
+    position: absolute;
+    right: 12%;
+    top: 52%; 
+}
+#aditya{
+    background-image: url(aditya.png);
+   background-size: 100% 100%;  
+    background-repeat: no-repeat; 
+    background-position: center;
+    width: 11%;
+    height: 22%;
+    position: absolute;
+    left: 50%;
+    top: 52%; 
+}
+#girl{
+    background-image: url(girl.png);
+   background-size: 100% 100%;  
+    background-repeat: no-repeat; 
+    background-position: center;
+    width: 15.5%;
+    height: 27.1%;
+    position: absolute;
+    right: 25%;
+    top: 50%; 
+}
+#guy{
+    background-image: url(guy.png);
+   background-size: 100% 100%;  
+    background-repeat: no-repeat; 
+    background-position: center;
+    width: 8.5%;
+    height: 30%;
+    position: absolute;
+    left: 35%;
+    top: 48%; 
+}
+
+#guyhand{
+    background-image: url(guyhand.png);
+   background-size: 100% 100%;  
+    background-repeat: no-repeat; 
+    background-position: center;
+    width: 3%;
+    height: 12%;
+    position: absolute;
+    left: 34.1%;
+    top: 51.1%; 
+}
+
+.lightning{
+    background-image: url(lightning.png);
+    background-size: 100% 100%;  
+     background-repeat: no-repeat; 
+     background-position: center;
+     width: 20%;
+     height: 36%;
+     position: absolute;
+     left: 5%;
+     top: 20%; 
+     
+}
+
+/* ---------------Animation Starts--------------------------- */
+/* car move animation  */
+@keyframes carbody {
+    0% { transform: translateX(35vw) scaleX(1); }  
+    50% { transform: translateX(-90vw) scaleX(1); } 
+    51% { transform: translateX(-90vw) scaleX(-1); } 
+    100% { transform: translateX(50vw) scaleX(-1); } 
+}
+
+#car {
+    animation: carbody 6s linear 0s infinite normal none;
+    position: absolute;
+}
+#scooter {
+    animation: carbody 9s linear 3s infinite normal none;
+    position: absolute;
+}
+/* clouds animation */
+@keyframes cloudthunder {
+    0% { filter: brightness(1); transform: scale(1.0); }
+    10% { filter: brightness(0.6); transform: scale(1.1); } 
+    20% { filter: brightness(0.8); transform: scale(1.05); }
+    30% { filter: brightness(0.5); transform: scale(1.2); }
+    50% { filter: brightness(0.7); transform: scale(1.15); }
+    65% { filter: brightness(0.4); transform: scale(1.3); } 
+    80% { filter: brightness(0.9); transform: scale(1.05); }
+    100% { filter: brightness(1); transform: scale(1.0); }
+}
+@keyframes thunderflash {
+    0%, 100% { filter: brightness(1); } 
+    40% { filter: brightness(2); } 
+    50% { filter: brightness(0.6); } 
+    55% { filter: brightness(3); } 
+    60% { filter: brightness(0.8); } 
+}
+
+.clouds {
+    animation: cloudthunder 3.2s ease-in-out 0s infinite normal none
+    ,thunderflash 2.5s infinite;
+}
+/* ---------------animationsfor background nature thunder------ */
+@keyframes thundernature {
+    0%, 100% { filter: brightness(1); } 
+    40% { filter: brightness(1.2); } 
+    50% { filter: brightness(0.6); } 
+    55% { filter: brightness(2); } 
+    60% { filter: brightness(0.8); } 
+}
+#carcartoonall{
+        animation: thundernature 2.5s infinite;
+    
+}
+/* ---------------animationsfor lightning------ */
+@keyframes lightning {
+    0%, 100% { opacity: 0; transform: translateX(0) translateY(0) scale(1); }
+    50% { opacity: 0.7; transform: translateX(5%) translateY(10%) scale(1.1); }
+    1000% { opacity: 0; }
+   
+}
+
+.lightning {
+ 
+    animation: lightning 3s infinite ease-in-out;
+}
+
+/* ---------------animations for guy------ */
+@keyframes guyhand-move {
+    0% { transform: rotate(0deg); } 
+    50% { transform: rotate(-25deg); } /* Hand pointing backward */
+    100% { transform: rotate(0deg); }   /* Hand pointing forward */
+}
+
+#guyhand {
+    position: absolute;
+    transform-origin: bottom right; /* Adjust according to actual shoulder position */
+    animation: guyhand-move 0.5s infinite ease-in-out;
+}
+/* girl animation  */
+@keyframes girl {
+    0% { transform: translateX(0vw) scaleX(1); }  
+    50% { transform: translateX(0vw) scaleX(1); } 
+    51% { transform: translateX(0vw) scaleX(-1); } 
+    100% { transform: translateX(0vw) scaleX(-1); } 
+}
+
+#girl {
+    animation: girl 7.5s linear 0s infinite normal none;
+    position: absolute;
+}
+
+/* kolhapur and dahiwadi nameplates  */
+/* Neon Glow & Flickering Shadow */
+@keyframes neonGlow {
+    0% { box-shadow: 0 0 5px rgba(255, 0, 0, 0.8), 0 0 10px rgba(255, 0, 0, 0.6), 0 0 15px rgba(255, 0, 0, 0.4); }
+    50% { box-shadow: 0 0 10px rgba(255, 255, 0, 0.9), 0 0 20px rgba(255, 255, 0, 0.7), 0 0 30px rgba(255, 255, 0, 0.5); }
+    100% { box-shadow: 0 0 5px rgba(255, 0, 0, 0.8), 0 0 10px rgba(255, 0, 0, 0.6), 0 0 15px rgba(255, 0, 0, 0.4); }
+}
+
+@keyframes thunderFlicker {
+    0%, 85% { filter: brightness(1); }
+    91% { filter: brightness(1.5); }
+    92% { filter: brightness(0.6); }
+    94% { filter: brightness(1.3); }
+    100% { filter: brightness(1); }
+}
+
+#kolhapur, #dahiwadi {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: red;
+    position: absolute;
+    text-transform: uppercase;
+    animation:  thunderFlicker 2s infinite;
+}
